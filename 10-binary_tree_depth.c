@@ -7,9 +7,15 @@
  * Return: If tree is NULL, your function must return 0, else return the depth.
  */
 
-size_t binary_tree_depth(const binary_tree_t *node)
 {
-if (node == NULL || node->parent == NULL)
-	return (0);
-return (binary_tree_depth(node->parent) + 1);
+	size_t depth = 0;
+
+	if (!tree)
+		return (0);
+	if (tree->parent)
+	{
+		depth = binary_tree_depth(tree->parent);
+		depth += 1;
+	}
+	return (depth);
 }
