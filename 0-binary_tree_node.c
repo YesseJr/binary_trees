@@ -5,21 +5,19 @@
  * @parent: The parent node of the new binary tree node.
  * @value: The value of the new binary tree node.
  *
- * Author: Waython Yesse
  * Return: A pointer to the created node, otherwise NULL.
  */
-
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-	binary_tree_t *newnode = NULL;
+	binary_tree_t *new_node = NULL;
 
-	newnode = malloc(sizeof(binary_tree_t));
-	if (newnode != NULL)
+	new_node = malloc(sizeof(binary_tree_t));
+	if (new_node != NULL)
 	{
-        newnode->parent = parent;
-		newnode->n = value;
-		newnode->left = NULL;
-		newnode->right = NULL;        
+		new_node->left = NULL;
+		new_node->right = NULL;
+		new_node->parent = parent;
+		new_node->n = value;
 	}
-	return (newnode);
+	return (new_node);
 }
