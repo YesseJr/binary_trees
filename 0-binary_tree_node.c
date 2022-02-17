@@ -8,17 +8,18 @@
  * Author: Waython Yesse
  * Return: A pointer to the created node, otherwise NULL.
  */
+
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *newnode = NULL;
 
 	newnode = malloc(sizeof(binary_tree_t));
 	if (newnode != NULL)
-	{
-        newnode->parent = parent;
-		newnode->n = value;
+	{        
 		newnode->left = NULL;
-		newnode->right = NULL;		
+		newnode->right = NULL;
+        newnode->parent = parent;
+		newnode->n = value;	
 	}
 	return (newnode);
 }
