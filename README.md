@@ -2,7 +2,7 @@
 
 
 ### Definition.
-### Binary tree is the tree data structure in which each node has at most two children, which are refered to as the left child and the right child.
+#### Binary tree is the tree data structure in which each node has at most two children, which are refered to as the left child and the right child.
 
 ### Types of binary trees
 * Tree terminology is not well-standardized and so varies in the literature.
